@@ -1,6 +1,6 @@
 async function fetchReviews() {
     try {
-        const response = await fetch('/reviews');
+        const response = await fetch('/.netlify/functions/fetchReviews');
         const data = await response.json();
 
         console.log("API response:", data);
