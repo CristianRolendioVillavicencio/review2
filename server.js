@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const apiKey = "YOUR_API_KEY"; // Reemplaza con tu API Key
+const apiKey = "AIzaSyCJWmirH9vAYIn_nOP0ug2THZZMjy7TwQ0"; // Reemplaza con tu API Key
 const placeId = "ChIJMYySAB_SEKwR4aoS-1A8AHQ"; // Reemplaza con el Place ID
 
 app.use(express.static('public'));

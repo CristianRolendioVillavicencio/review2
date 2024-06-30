@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Reviews</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #333;
+        }
+        .reviews-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        .review strong {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .review p {
+            margin: 5px 0;
+        }
+        .review em {
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <div id="reviews-container">
-        <h1>Google Reviews</h1>
-        <div id="reviews"></div>
-    </div>
+    <h1>Google Reviews</h1>
+    <div class="reviews-container" id="reviews"></div>
     <script src="script.js"></script>
 </body>
 </html>
